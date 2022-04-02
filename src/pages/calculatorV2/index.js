@@ -333,14 +333,14 @@ const styles = StyleSheet.create({
         margin: 10,
         flexDirection: 'row',
         flexWrap: 'wrap',
-        bottom: 50,
+        bottom: 40,
         justifyContent: 'space-between'
     },
     btn: {
         backgroundColor: colors.seondary,
         width: 70,
         height: 70,
-        margin: 8,
+        margin: 6,
         shadowColor: "#000",
         borderRadius: 10,
         shadowOffset: {
@@ -364,7 +364,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#243441',
         width: 70,
         height: 70,
-        margin: 8,
+        margin: 6,
         shadowColor: "#000",
         borderRadius: 10,
         shadowOffset: {
@@ -384,12 +384,13 @@ const styles = StyleSheet.create({
         // marginTop: 12,
         fontWeight: 'bold'
     },
+    
     btnClear: {
         backgroundColor: colors.primary,
-        width: vw(90),
-        height: 80,
+        width: vw(91),
+        height: 75,
         margin: 5,
-        marginStart:11,
+        marginHorizontal: 5,
         shadowColor: "#000",
         borderRadius: 10,
         shadowOffset: {
