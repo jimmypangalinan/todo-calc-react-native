@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import { vh, vw } from 'react-native-expo-viewport-units'
 import { colors } from '../../assets/colors'
 
+
 // import {colors} from '../../assets/colors'
 
 const App = () => {

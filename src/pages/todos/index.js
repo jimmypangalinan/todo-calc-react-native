@@ -140,21 +140,30 @@ export default function Todos() {
             {taskItems.map((item) => {
               return (
                 <View style={styles.item} key={item._id}>
-                  <View style={styles.itemLeft}>
+                  
                     {item.status == 'done' ?
+                      <View style={styles.itemLeft}>
                       <Checkbox
                         onPress={() => cancelTodo(item._id)}
                         isChecked={true}
                         style={styles.checkbox}
                         colorScheme="green"
-                      /> : <Checkbox
+                      /> 
+                      <Text strikeThrough style={styles.itemText} >{item.task}</Text>
+                      </View>
+                      : 
+                      <View style={styles.itemLeft}>
+                      <Checkbox
                         onPress={() => doneTodo(item._id)}
                         isChecked={false}
                         style={styles.checkbox}
                         colorScheme="green"
-                      />}
-                    <Text style={styles.itemText} >{item.task}</Text>
-                  </View>
+                      />
+                      <Text  style={styles.itemText} >{item.task}</Text>
+                      </View>
+                      }
+                    
+                  
 
                   <View style={styles.btnModif}>
                     {item.status == 'done' ? null :
